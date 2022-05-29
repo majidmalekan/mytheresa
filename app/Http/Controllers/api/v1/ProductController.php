@@ -27,6 +27,6 @@ class ProductController extends Controller
      */
     public function index(IndexProductRequest $request): JsonResponse
     {
-        return success('Show Products Successfully.',$this->productService->read($request));
+        return success('Show Products Successfully.', $this->productService->read($request));
     }
 }

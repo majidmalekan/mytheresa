@@ -11,6 +11,7 @@ class Product extends Model
     use HasFactory, SoftDeletes;
 
     protected $guarded = [];
+    protected $hidden=["deleted_at","updated_at"];
 
     const CURRENCY = "EUR";
     const CategoryName = "boots";
@@ -23,7 +24,7 @@ class Product extends Model
     public function getPriceAttribute($value): array
     {
 
-        $percent=$this->calculatePercent();
+        $percent = $this->calculatePercent();
         return $this->calculatePrice($value, $percent);
     }
 
@@ -36,7 +37,7 @@ class Product extends Model
     {
         return [
             'original' => $price,
-            'final' => ($price * $percent) / 100,
+            'final' => $percent == null ? $price : round(($price * $percent) / 100),
             'discount_percentage' => $percent == null ? $percent : $percent . "%",
             'currency' => self::CURRENCY
         ];
