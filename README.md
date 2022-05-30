@@ -65,4 +65,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## Documentation For Running
 
-the documentation for running this task project is in the documentation.pdf file and for testing the route to show a collection of paginated products please add mytheresa.postman_collection.json collection file to your postman workspace.
+the documentation for running this task project is in the documentation.pdf file and for testing the route to show a collection of paginated products please add mytheresa.postman_collection.json collection file to your postman workspace, if you dont want to migrate tables by your self you can use mythersa.sql and import it 
