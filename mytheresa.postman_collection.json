@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "04f6d8a2-1390-4a86-964c-045e18b2c407",
+		"name": "mytheresa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4816485"
+	},
+	"item": [
+		{
+			"name": "shown products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/products?category=boots&priceLessThan=25000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"products"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "boots"
+						},
+						{
+							"key": "priceLessThan",
+							"value": "25000"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
