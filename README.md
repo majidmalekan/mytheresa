@@ -65,4 +65,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## Documentation For Running
 
-the documentation for running this task project is in the documentation.pdf file and for testing the route to show a collection of paginated products is in mytheresa.postman_collection.json file.
+the documentation for running this task project is in the documentation.pdf file and for testing the route to show a collection of paginated products please add mytheresa.postman_collection.json collection file to your postman workspace.
